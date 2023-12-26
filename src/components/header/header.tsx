@@ -8,7 +8,7 @@ import { ButtonBackPage } from "./components/button-back-page";
 
 export const Header = () => (
   <header className="flex items-center justify-between flex-col sm:flex-row gap-2">
-    <Link href="/">
+    <Link href="/" data-testid="logo-element">
       <Image
         priority
         width={250}

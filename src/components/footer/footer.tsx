@@ -4,7 +4,10 @@ import { PhoneCall } from "lucide-react";
 import { ME } from "@/constants/me";
 
 export const Footer = () => (
-  <footer className="flex items-center gap-4 justify-between fixed bottom-0 w-full pr-8 h-10 bg-slate-900">
+  <footer
+    data-testid="footer-element"
+    className="flex items-center gap-4 justify-between fixed bottom-0 w-full pr-8 h-10 bg-slate-900"
+  >
     <p>
       Developed by{" "}
       <Link

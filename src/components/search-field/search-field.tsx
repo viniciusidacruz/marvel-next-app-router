@@ -21,6 +21,7 @@ export const SearchField = () => {
   return (
     <form
       onSubmit={onSubmitHero}
+      data-testid="field-search-element"
       className="flex items-center justify-between max-w-[320px] w-full bg-white rounded-lg h-12 px-4"
     >
       <input
