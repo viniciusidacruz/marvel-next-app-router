@@ -6,7 +6,10 @@ export default function SearchLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="mx-auto max-w-[1600px] w-full p-4">
+    <div
+      data-testid="search-layout-wrapper"
+      className="mx-auto max-w-[1600px] w-full p-4"
+    >
       <Header />
 
       <main className="my-6">{children}</main>

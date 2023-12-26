@@ -1,3 +1,5 @@
+import { Hero } from "@/models";
+
 export interface ResponseHeroes {
   offset: number;
   limit: number;

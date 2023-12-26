@@ -9,7 +9,9 @@ export const NotFoundResult = ({
 
   return (
     <main className="w-full min-h-[70vh] flex items-center justify-center flex-col gap-4">
-      <h1 className="text-3xl font-bold">{title}</h1>
+      <h1 data-testid="title-not-found" className="text-3xl font-bold">
+        {title}
+      </h1>
 
       {hasDescription && <p>{description}</p>}
 

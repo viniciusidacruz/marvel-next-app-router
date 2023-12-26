@@ -13,7 +13,9 @@ async function getHeroById(id: string) {
   return await heroesService.detailsById(id);
 }
 
-export default async function DetailsHeroPage(props: PageTypes) {
+const DetailsPage: ({
+  params: { name, id },
+}: PageTypes) => Promise<JSX.Element> = async (props) => {
   const { id, name } = props.params;
 
   const hero = await getHeroById(id);
@@ -107,4 +109,6 @@ export default async function DetailsHeroPage(props: PageTypes) {
       )}
     </section>
   );
-}
+};
+
+export default DetailsPage;

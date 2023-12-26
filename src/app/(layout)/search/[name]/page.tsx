@@ -9,7 +9,9 @@ async function getHeroesByName(name: string) {
   return await heroesService.listAllByName(name);
 }
 
-export default async function SearchHeroPage(props: PageTypes) {
+const SearchHeroPage: ({
+  params: { name },
+}: PageTypes) => Promise<JSX.Element> = async (props) => {
   const heroName = props.params.name;
   const data = await getHeroesByName(heroName);
 
@@ -40,4 +42,6 @@ export default async function SearchHeroPage(props: PageTypes) {
       </div>
     </section>
   );
-}
+};
+
+export default SearchHeroPage;
