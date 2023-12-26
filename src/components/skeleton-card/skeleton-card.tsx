@@ -1,6 +1,6 @@
 export const SkeletonCard = () => (
   <div
-    role="status"
+    data-testid="skeleton-card-element"
     className="max-w-sm p-2 border border-gray-200 rounded shadow animate-pulse dark:border-gray-700"
   >
     <div className="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
